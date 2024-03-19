@@ -1,7 +1,6 @@
 nohup: ignoring input
 /root/occ/BEVDet/mmdet3d/models/backbones/swin.py:772: UserWarning: DeprecationWarning: pretrained is a deprecated, please use "init_cfg" instead
   warnings.warn('DeprecationWarning: pretrained is a deprecated, '
-load checkpoint from local path: work_dirs/fusion-occ-depth/epoch_2_ema.pth
 [                                                  ] 0/6019, elapsed: 0s, ETA:/root/occ/BEVDet/mmdet3d/datasets/pipelines/loading.py:1630: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)
   gt_boxes, gt_labels = torch.Tensor(gt_boxes), torch.tensor(gt_labels)
 /root/occ/BEVDet/mmdet3d/datasets/pipelines/loading.py:1630: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)

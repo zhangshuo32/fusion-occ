@@ -1,0 +1,156 @@
+nohup: ignoring input
+/root/occ/BEVDet/mmdet3d/models/backbones/swin.py:772: UserWarning: DeprecationWarning: pretrained is a deprecated, please use "init_cfg" instead
+  warnings.warn('DeprecationWarning: pretrained is a deprecated, '
+load checkpoint from local path: work_dirs/fusion-occ-depth-nomask/epoch_2_ema.pth
+[                                                  ] 0/6019, elapsed: 0s, ETA:/root/occ/BEVDet/mmdet3d/datasets/pipelines/loading.py:1630: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)
+  gt_boxes, gt_labels = torch.Tensor(gt_boxes), torch.tensor(gt_labels)
+/root/occ/BEVDet/mmdet3d/datasets/pipelines/loading.py:1630: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)
+  gt_boxes, gt_labels = torch.Tensor(gt_boxes), torch.tensor(gt_labels)
+/root/occ/BEVDet/mmdet3d/datasets/pipelines/loading.py:1630: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)
+  gt_boxes, gt_labels = torch.Tensor(gt_boxes), torch.tensor(gt_labels)
+/root/occ/BEVDet/mmdet3d/datasets/pipelines/loading.py:1630: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  /opt/conda/conda-bld/pytorch_1634272068694/work/torch/csrc/utils/tensor_new.cpp:201.)
+  gt_boxes, gt_labels = torch.Tensor(gt_boxes), torch.tensor(gt_labels)
+/root/anaconda3/envs/occ/lib/python3.8/site-packages/torch/utils/checkpoint.py:25: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn("None of the inputs have requires_grad=True. Gradients will be None")
+/root/occ/BEVDet/mmdet3d/models/necks/view_transformer.py:219: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  ranks_depth = torch.range(
+/root/occ/BEVDet/mmdet3d/models/necks/view_transformer.py:221: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  ranks_feat = torch.range(
+/root/occ/BEVDet/mmdet3d/models/necks/view_transformer.py:229: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  batch_idx = torch.range(0, B - 1).reshape(B, 1). \
+
+hist:  [[8.12030000e+04 2.05100000e+03 1.45600000e+03 3.00000000e+00
+  1.18920000e+04 4.14600000e+03 1.50000000e+02 2.56300000e+03
+  5.24000000e+02 8.60300000e+03 5.06000000e+02 4.71800000e+03
+  1.72100000e+03 4.29800000e+03 1.01320000e+04 1.98103000e+05
+  1.32290000e+04 2.86926000e+05]
+ [2.68400000e+03 4.25596000e+05 1.83000000e+02 7.00000000e+00
+  3.22000000e+02 8.38000000e+02 5.70000000e+01 7.92000000e+02
+  5.12600000e+03 2.64000000e+02 2.35000000e+02 9.44200000e+03
+  1.48600000e+03 5.12000000e+03 6.11300000e+03 5.08580000e+04
+  5.82000000e+03 1.29723000e+05]
+ [1.86600000e+03 1.51000000e+02 2.39860000e+04 0.00000000e+00
+  2.10000000e+01 0.00000000e+00 1.90000000e+02 2.09800000e+03
+  6.10000000e+01 0.00000000e+00 6.00000000e+00 5.35000000e+02
+  2.00000000e+00 1.18200000e+03 1.00500000e+03 2.69400000e+03
+  1.58300000e+03 1.67770000e+04]
+ [5.60000000e+01 6.00000000e+00 0.00000000e+00 8.42952000e+05
+  1.65200000e+03 9.30000000e+01 0.00000000e+00 4.50000000e+01
+  0.00000000e+00 5.10000000e+01 8.60900000e+03 1.89480000e+04
+  0.00000000e+00 2.49000000e+02 1.66000000e+02 3.57000000e+03
+  7.15000000e+02 4.78721000e+05]
+ [2.33100000e+03 3.49000000e+02 5.00000000e+00 1.35730000e+04
+  4.11716100e+06 1.20000000e+01 8.67000000e+02 1.72000000e+03
+  1.49000000e+02 2.50000000e+02 1.09156000e+05 1.68519000e+05
+  4.63000000e+02 5.80500000e+03 4.42400000e+03 1.64460000e+04
+  5.89700000e+03 1.94310600e+06]
+ [9.49000000e+02 9.87000000e+02 1.00000000e+00 1.59200000e+03
+  2.72000000e+02 1.38657000e+05 3.50000000e+01 1.56000000e+02
+  6.40000000e+02 3.15200000e+03 1.79920000e+04 2.89600000e+03
+  2.80000000e+01 8.95000000e+02 2.30800000e+03 1.71490000e+04
+  7.14700000e+03 1.81747000e+05]
+ [1.11700000e+03 6.20000000e+01 2.70000000e+02 0.00000000e+00
+  1.69000000e+03 0.00000000e+00 4.55360000e+04 1.22400000e+03
+  1.00000000e+00 0.00000000e+00 1.95000000e+02 3.78300000e+03
+  0.00000000e+00 7.42000000e+02 3.46000000e+02 1.04400000e+03
+  7.44000000e+02 3.26380000e+04]
+ [9.96000000e+02 2.88000000e+02 5.25000000e+02 6.60000000e+01
+  1.73000000e+03 2.04000000e+02 4.17000000e+02 3.63518000e+05
+  2.09000000e+02 0.00000000e+00 1.24200000e+03 5.21400000e+03
+  3.20000000e+02 1.09800000e+04 2.00100000e+03 1.62160000e+04
+  3.54700000e+03 2.02374000e+05]
+ [6.34000000e+02 2.61000000e+03 1.00000000e+02 0.00000000e+00
+  3.20000000e+01 9.70000000e+01 9.00000000e+00 2.43000000e+02
+  6.81310000e+04 6.70000000e+01 1.00000000e+02 2.49800000e+03
+  8.58000000e+02 1.23000000e+03 9.75000000e+02 8.00400000e+03
+  4.09000000e+02 2.12180000e+04]
+ [1.01000000e+02 2.20000000e+01 0.00000000e+00 3.54000000e+02
+  3.96000000e+02 1.55300000e+03 0.00000000e+00 0.00000000e+00
+  3.69000000e+02 3.57895000e+05 3.91440000e+04 7.67500000e+03
+  5.14000000e+02 1.55000000e+02 4.71000000e+02 2.40660000e+04
+  9.83000000e+02 2.78788000e+05]
+ [3.20000000e+02 2.85000000e+02 0.00000000e+00 1.24340000e+04
+  7.11910000e+04 1.84370000e+04 3.86000000e+02 1.10000000e+03
+  3.17000000e+02 7.83410000e+04 1.65046500e+06 4.66690000e+04
+  1.71000000e+02 1.93000000e+03 1.22700000e+03 2.81240000e+04
+  2.44800000e+03 9.94869000e+05]
+ [5.10800000e+03 1.80520000e+04 5.05000000e+02 1.36580000e+04
+  1.88387000e+05 2.99700000e+03 3.83800000e+03 9.84900000e+03
+  8.34500000e+03 4.60000000e+03 5.20270000e+04 2.85064070e+07
+  1.55091000e+05 6.75240000e+05 3.80632000e+05 6.02540000e+04
+  1.08580000e+04 1.31808190e+07]
+ [7.00000000e+02 9.94000000e+02 0.00000000e+00 3.50000000e+01
+  5.75000000e+02 6.93000000e+02 3.00000000e+00 6.40000000e+02
+  1.57700000e+03 1.01100000e+03 3.71000000e+02 1.26721000e+05
+  7.22948000e+05 4.64270000e+04 5.39510000e+04 1.22990000e+04
+  5.87800000e+03 4.83028000e+05]
+ [9.34000000e+03 9.34100000e+03 1.69400000e+03 5.14000000e+02
+  4.13100000e+03 6.80000000e+01 4.11000000e+02 2.02070000e+04
+  2.33000000e+03 1.19000000e+02 1.90000000e+03 4.63100000e+05
+  3.36730000e+04 7.09629000e+06 7.20068000e+05 1.84884000e+05
+  4.43240000e+04 4.37873400e+06]
+ [1.22180000e+04 1.10130000e+04 1.07000000e+03 2.56000000e+02
+  2.25400000e+03 3.54900000e+03 5.56000000e+02 3.22100000e+03
+  2.20400000e+03 3.50000000e+02 5.02000000e+02 2.48990000e+05
+  5.87470000e+04 7.14723000e+05 8.03685200e+06 1.28843000e+05
+  2.64912000e+05 6.44362200e+06]
+ [7.10500000e+04 5.23920000e+04 3.62300000e+03 5.88000000e+02
+  1.09640000e+04 8.69700000e+03 1.88500000e+03 2.93790000e+04
+  1.73200000e+04 1.17890000e+04 5.52200000e+03 5.69660000e+04
+  4.22540000e+04 2.42247000e+05 2.64147000e+05 2.72052230e+07
+  9.66867000e+05 1.95379820e+07]
+ [1.94970000e+04 5.34800000e+03 1.54000000e+03 3.67000000e+02
+  3.72500000e+03 1.85300000e+03 8.19000000e+02 4.67200000e+03
+  1.09000000e+03 3.67000000e+02 1.25600000e+03 1.09360000e+04
+  7.51100000e+03 6.46870000e+04 4.55884000e+05 7.88429000e+05
+  3.34760620e+07 2.13670400e+07]
+ [1.93842000e+05 1.83146000e+05 2.01310000e+04 5.01669000e+05
+  1.94652500e+06 1.22915000e+05 2.97090000e+04 2.94508000e+05
+  6.40140000e+04 3.24372000e+05 9.45571000e+05 1.51305930e+07
+  6.72290000e+05 6.13382900e+06 7.97701400e+06 8.58062400e+06
+  1.64145140e+07 3.60036586e+09]]
+
+===> per class IoU of 6019 samples:
+===> others - IoU = 8.5
+===> barrier - IoU = 45.68
+===> bicycle - IoU = 28.81
+===> bus - IoU = 44.34
+===> car - IoU = 47.67
+===> construction_vehicle - IoU = 25.55
+===> motorcycle - IoU = 35.37
+===> pedestrian - IoU = 37.01
+===> traffic_cone - IoU = 32.21
+===> trailer - IoU = 31.23
+===> truck - IoU = 40.32
+===> driveable_surface - IoU = 47.84
+===> other_flat - IoU = 29.71
+===> sidewalk - IoU = 33.98
+===> terrain - IoU = 31.13
+===> manmade - IoU = 46.39
+===> vegetation - IoU = 45.26
+===> free - IoU = 96.53
+
+===> per class IoU of 6019 samples:
+===> others - IoU = 8.5
+===> barrier - IoU = 45.68
+===> bicycle - IoU = 28.81
+===> bus - IoU = 44.34
+===> car - IoU = 47.67
+===> construction_vehicle - IoU = 25.55
+===> motorcycle - IoU = 35.37
+===> pedestrian - IoU = 37.01
+===> traffic_cone - IoU = 32.21
+===> trailer - IoU = 31.23
+===> truck - IoU = 40.32
+===> driveable_surface - IoU = 47.84
+===> other_flat - IoU = 29.71
+===> sidewalk - IoU = 33.98
+===> terrain - IoU = 31.13
+===> manmade - IoU = 46.39
+===> vegetation - IoU = 45.26
+===> mIoU of 6019 samples: 35.94
+use mask  False
+(['others', 'barrier', 'bicycle', 'bus', 'car', 'construction_vehicle', 'motorcycle', 'pedestrian', 'traffic_cone', 'trailer', 'truck', 'driveable_surface', 'other_flat', 'sidewalk', 'terrain', 'manmade', 'vegetation', 'free'], array([0.08502638, 0.45676422, 0.28808552, 0.44343746, 0.47674442,
+       0.25546886, 0.35374911, 0.37008177, 0.3221461 , 0.31234782,
+       0.40323617, 0.47841687, 0.29714506, 0.33984652, 0.31132795,
+       0.4638532 , 0.45261802, 0.96528197]), 6019)
